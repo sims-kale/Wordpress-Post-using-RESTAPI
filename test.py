@@ -1,0 +1,111 @@
+import requests
+import json
+import jwt
+import openpyxl
+import json
+from datetime import datetime, timedelta
+
+
+def get_jwt_token(username, password):
+    url = 'https://newbuildhomes.org/wp-json/jwt-auth/v1/token'
+    params = {
+        'username': username,
+        'password': password
+    }
+    headers = {
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Accept': '*/*',
+        'User-Agent': 'Mozilla/5.0'
+    }
+    response = requests.post(url=url, headers=headers, params=params)
+    if response.ok:
+        response_data = json.loads(response.text)
+        return response_data['token']
+    else:
+        raise Exception(f"Failed to get JWT token. Status code: {response.status_code}. Response body: {response.text}")
+    
+# def city(jwt_token, ws):
+#     city_url =' https://newbuildhomes.org/wp-json/wp/v2/property_city'
+  
+#     headers= {
+#         'Authorization': f'Bearer {jwt_token}',
+#         'Content-Type': 'application/json',
+#         'Accept-Encoding': 'gzip, deflate, br',
+#         'Connection': 'keep-alive',
+#         'Accept': '*/*',
+#         'User-Agent': 'Mozilla/5.0'
+#     }
+#     new_city = {
+#             'name': ws['C19'].value.split(',')[0]
+#         }
+#     print(new_city['name'])
+    
+   
+#     response = requests.post(url=city_url, headers=headers, json=new_city)
+#     print(response.text)
+#     if response.ok:
+#             print('New City added successfully!')
+#             city_id = json.load(response.text)
+#             print(city_id)
+#             return city_id['id']
+#     # else:
+#     #         print(f'Error while adding new city. Status code: {response.status_code}. Response body: {response.text}')
+    
+#     else:
+#         params= {
+#         'search': ws['C19'].value.split(',')[0]
+#     }
+#     print(params['search'])
+        
+#     response = requests.get(url=city_url, headers=headers, params=params)
+#     # print(response.text)
+#     if response.ok:
+#         response_data = json.loads(response.text)
+#         if response_data:
+#             city_id =response_data[0]['id']
+#             print(city_id)
+#             return city_id
+#         # else:
+#         #     raise Exception(f"No city found with name {params}")
+       
+    
+
+
+def create_post(jwt_token, post_url, ws, city_id):
+    
+    headers = {
+        'Authorization': f'Bearer {jwt_token}',
+        'Content-Type': 'application/json',
+        'Accept-Encoding': 'gzip, deflate, br',
+        'Connection': 'keep-alive',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
+    }
+    post_data = {
+        'title': ws['B19'].value,
+        'status': 'publish',
+        # 'property_city': city_id
+        
+    }
+    response = requests.post(url=post_url, headers=headers, json=post_data)
+    if response.ok:
+        print('Post created successfully!')
+    else:
+        print(f'Error creating post. Status code: {response.status_code}. Response body: {response.text}')
+
+def main():
+    username = 'Muktesh'
+    password = 'pNku V9CJ WvSQ 5jwZ Ip1S gPbV'
+    jwt_token = get_jwt_token(username, password)
+    post_url = 'https://newbuildhomes.org/wp-json/wp/v2/properties'
+
+    wb = openpyxl.load_workbook('Property.xlsx')
+    ws = wb['extraction results']
+
+    # city(jwt_token,json_str)
+    # id = city(jwt_token, ws)
+    create_post(jwt_token, post_url, ws, id)
+    
+
+if __name__ == '__main__':
+    main()
