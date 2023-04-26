@@ -38,7 +38,8 @@ def City(jwt_token, city_name):
         'Accept-Encoding': 'gzip, deflate, br',
         'Connection': 'keep-alive',
         'Accept': '*/*',
-        'User-Agent': 'Mozilla/5.0'
+        'User-Agent': 'Mozilla/5.0',
+        
     }
     new_city = {
         'name': city_name
@@ -85,13 +86,13 @@ def Type(jwt_token, typestring):
         return type_id
 
 
-def Media(jwt_token, imageurl):
-    print(imageurl)
+def Media(jwt_token, imgurl):
+    print(imgurl)
     media_url = "https://newbuildhomes.org/wp-json/wp/v2/media"
 
-    raw = requests.get(imageurl).content
+    raw = requests.get(imgurl).content
 
-    file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpg")
+    file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpeg")
     filename = file.name
     print(filename)
 
@@ -102,11 +103,12 @@ def Media(jwt_token, imageurl):
     multipart_data = MultipartEncoder(
         fields={
             # a file upload field
-            'file': (fileName, open(filename, 'rb'), 'image/jpeg'),
+            'file': (fileName, open(filename, 'rb'), 'image/jpg'),
             # plain text fields
             'alt_text': 'alt test',
             'caption': 'caption test',
             'description': 'description test',
+            'posts':'18392'
         }
     )
 
@@ -127,18 +129,19 @@ def Media(jwt_token, imageurl):
 
     media = json.loads(response.text)
     
-    # print(media)
+    
+    print(media)
     
     if response.ok:
         print("Property images added successfully")
         media_id = media['id']
-        # res = requests.post(
-        #     'https://newbuildhomes.org/wp-json/wp/v2/properties/18225',
-        #     headers=headers,
-        #     json=[media_id]
-        # )
-        # print(res.text)
-        # print(media_id)
+        res = requests.post(
+            'https://newbuildhomes.org/wp-json/wp/v2/properties/18392',
+            headers=headers,
+            json=[media_id]
+        )
+        print(res.text)
+        print(media_id)
         return (media_id)
     else:
         media_id = media['data']['term_id']
@@ -184,7 +187,7 @@ def main():
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
 
-    for row in ws.iter_rows(min_row=9, max_row=15, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=2, max_row=2, min_col=1, values_only=True):
         print(row)
         title= row[1]
         city_name = row[2].split(',')[0]
@@ -197,7 +200,7 @@ def main():
         type = Type(jwt_token, typestring)
         for image in arr_images:
             media = Media(jwt_token, image)
-        create_post(jwt_token, post_url, title, city, type, media)
+        # create_post(jwt_token, post_url, title, city, type, media)
 
 
 if __name__ == '__main__':
