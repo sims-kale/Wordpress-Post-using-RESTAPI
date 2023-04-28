@@ -5,8 +5,11 @@ import json
 import jwt
 import openpyxl
 import json
+import logging
 from datetime import datetime, timedelta
-import tempfile
+
+
+logging.basicConfig(filename='Logs.log', level=logging.INFO)
 
 
 def get_jwt_token(username, password):
@@ -25,11 +28,16 @@ def get_jwt_token(username, password):
         response_data = json.loads(response.text)
         return response_data['token']
     else:
-        raise Exception(
+        logging.exception(
             f"Failed to get JWT token. Status code: {response.status_code}. Response body: {response.text}")
 
 
 def City(jwt_token, city_name):
+    if city_name is None:
+        logging.info("City name is None, skipping...")
+        return None
+    logging.info("Property City: " + city_name)
+
     city_url = ' https://newbuildhomes.org/wp-json/wp/v2/property_city'
 
     headers = {
@@ -38,8 +46,7 @@ def City(jwt_token, city_name):
         'Accept-Encoding': 'gzip, deflate, br',
         'Connection': 'keep-alive',
         'Accept': '*/*',
-        'User-Agent': 'Mozilla/5.0',
-        
+        'User-Agent': 'Mozilla/5.0'
     }
     new_city = {
         'name': city_name
@@ -48,19 +55,23 @@ def City(jwt_token, city_name):
     response = requests.post(url=city_url, headers=headers, json=new_city)
     city = json.loads(response.text)
     if response.ok:
-        print("Property City added successfully")
         city_id = city['id']
-        print(city_id)
+        logging.info("Property City added successfully " + str(city_id))
+
         return city_id
     else:
         city_id = city['data']['term_id']
-        print(city_id)
+        logging.info("City already existed: " + str(city_id))
         return city_id
 
 
 def Type(jwt_token, typestring):
+    if typestring is None:
+        logging.info("Typestring is None, skipping...")
+        return None
+    logging.info("Property Type: " + typestring)
+
     type_url = 'https://newbuildhomes.org/wp-json/wp/v2/property_type'
-    print(type_url)
     headers = {
         'Authorization': f'Bearer {jwt_token}',
         'Content-Type': 'application/json',
@@ -73,83 +84,91 @@ def Type(jwt_token, typestring):
         'name': typestring
     }
     response = requests.post(url=type_url, headers=headers, json=new_type)
-    # print(response.text)
+
     type = json.loads(response.text)
     if response.ok:
-        print("Property Type added successfully")
         type_id = type['id']
-        print(type_id)
+        logging.info("Property Type added successfully "+str(type_id))
+
         return type_id
     else:
         type_id = type['data']['term_id']
-        print(type_id)
+        logging.info("Property type already existed: " + str(type_id))
         return type_id
 
 
-def Media(jwt_token, imgurl):
-    print(imgurl)
-    media_url = "https://newbuildhomes.org/wp-json/wp/v2/media"
+# def Media(jwt_token, imageurl):
 
-    raw = requests.get(imgurl).content
+#     if not imageurl:
+#         logging.info("Image URL is empty, skipping...")
+#         return None
 
-    file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpeg")
-    filename = file.name
-    print(filename)
+#     media_url = "https://newbuildhomes.org/wp-json/wp/v2/media"
 
-    with file as img:
-        img.write(raw)
+#     raw = requests.get(imageurl).content
 
-    fileName = os.path.basename(filename)
-    multipart_data = MultipartEncoder(
-        fields={
-            # a file upload field
-            'file': (fileName, open(filename, 'rb'), 'image/jpg'),
-            # plain text fields
-            'alt_text': 'alt test',
-            'caption': 'caption test',
-            'description': 'description test',
-            'posts':'18392'
-        }
-    )
+#     file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpeg")
+#     filename = file.name
+#     print(filename)
 
-    headers = {
-        'Authorization': f'Bearer {jwt_token}',
-        'Content-Type': multipart_data.content_type,
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive',
-        'Content-Disposition': 'attachment; filename="1.1.jpeg"',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
-    }
+#     with file as img:
+#         img.write(raw)
 
-    response = requests.post(
-        url=media_url, headers=headers, data=multipart_data)
-    
-    # print(response.text)
+#     fileName = os.path.basename(filename)
+#     multipart_data = MultipartEncoder(
+#         fields={
+#             # a file upload field
+#             'file': (fileName, open(filename, 'rb'), 'image/jpeg'),
+#             # plain text fields
+#             'alt_text': 'alt test',
+#             'caption': 'caption test',
+#             'description': 'description test',
+#         }
+#     )
 
-    media = json.loads(response.text)
-    
-    
-    print(media)
-    
-    if response.ok:
-        print("Property images added successfully")
-        media_id = media['id']
-        res = requests.post(
-            'https://newbuildhomes.org/wp-json/wp/v2/properties/18392',
-            headers=headers,
-            json=[media_id]
-        )
-        print(res.text)
-        print(media_id)
-        return (media_id)
-    else:
-        media_id = media['data']['term_id']
-        print(media_id)
-        return media_id
+#     headers = {
+#         'Authorization': f'Bearer {jwt_token}',
+#         'Content-Type': multipart_data.content_type,
+#         'Accept-Encoding': 'gzip, deflate, br',
+#         'Connection': 'keep-alive',
+#         'Content-Disposition': 'attachment; filename="1.1.jpeg"',
+#         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+#         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
+#     }
+
+#     response = requests.post(
+#         url=media_url, headers=headers, data=multipart_data)
+
+#     # print(response.text)
+
+#     media = json.loads(response.text)
+
+#     # print(media)
+
+#     if response.ok:
+
+#         media_id = media['id']
+#         logging.info("Property images added successfully "+ str(media_id))
+
+#         # res = requests.post(
+#         #     'https://newbuildhomes.org/wp-json/wp/v2/properties/18225',
+#         #     headers=headers,
+#         #     json=[media_id]
+#         # )
+#         # print(res.text)
+#         # print(media_id)
+#         return (media_id)
+#     # else:
+#     #     media_id = media['data']['term_id']
+#     #     logging.info("Image already existed: "+media_id)
+#     #     return media_id
 
 
-def create_post(jwt_token, post_url, title, city_id, type_id, media_id):
+def create_post(jwt_token, post_url, title, city_id, type_id):
+    if title is None:
+        logging.info("Title is None, skipping...")
+        return None
+    logging.info("Property Title: "+title)
 
     headers = {
         'Authorization': f'Bearer {jwt_token}',
@@ -166,15 +185,24 @@ def create_post(jwt_token, post_url, title, city_id, type_id, media_id):
         'status': 'publish',
         'property_city': city_id,
         'property_type': type_id,
-        'featured_media': media_id
+        # 'featured_media': media_id
 
     }
     response = requests.post(url=post_url, headers=headers, json=post_data)
-    print
+    post = json.loads(response.text)
+
     if response.ok:
-        print('Post created successfully!')
+        post_id = post['id']
+        logging.info("New post Created: " + str(post_id))
+        post_url = "https://newbuildhomes.org/wp-admin/post.php?post=" + \
+            str(post_id)+"&action=edit"
+        print(post_url)
+        logging.info("Post URL: " + post_url)
+        logging.info("-----------------------------------------------------------------------------------")
+        return post_id
+
     else:
-        print(
+        logging.exception(
             f'Error creating post. Status code: {response.status_code}. Response body: {response.text}')
 
 
@@ -187,20 +215,21 @@ def main():
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
 
-    for row in ws.iter_rows(min_row=2, max_row=2, min_col=1, values_only=True):
-        print(row)
-        title= row[1]
+    for row in ws.iter_rows(min_row=1907, max_row=2572, min_col=1, values_only=True):
+        title = row[1]
+
         city_name = row[2].split(',')[0]
+
         typestring = row[3]
-        arr_images = row[6].replace("]", "").replace(
-            "[", "").replace("'", "").split(",")
-        print(arr_images)
-        print('city_name', city_name)
+
+        # arr_images = row[6].replace("]", "").replace(
+        #     "[", "").replace("'", "").split(",")
+
         city = City(jwt_token, city_name)
         type = Type(jwt_token, typestring)
-        for image in arr_images:
-            media = Media(jwt_token, image)
-        # create_post(jwt_token, post_url, title, city, type, media)
+        # for image in arr_images:
+        #     media = Media(jwt_token, image)
+        create_post(jwt_token, post_url, title, city, type)
 
 
 if __name__ == '__main__':
