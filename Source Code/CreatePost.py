@@ -1,3 +1,4 @@
+import re
 import requests
 from requests_toolbelt.multipart.encoder import MultipartEncoder
 import os
@@ -9,7 +10,7 @@ import logging
 from datetime import datetime, timedelta
 
 
-logging.basicConfig(filename='Logs.log', level=logging.INFO)
+logging.basicConfig(filename='Source Code/Logs.log', level=logging.INFO)
 
 
 def get_jwt_token(username, password):
@@ -66,12 +67,15 @@ def City(jwt_token, city_name):
 
 
 def Type(jwt_token, typestring):
+    
     if typestring is None:
         logging.info("Typestring is None, skipping...")
         return None
+    
     logging.info("Property Type: " + typestring)
 
     type_url = 'https://newbuildhomes.org/wp-json/wp/v2/property_type'
+
     headers = {
         'Authorization': f'Bearer {jwt_token}',
         'Content-Type': 'application/json',
@@ -80,21 +84,49 @@ def Type(jwt_token, typestring):
         'Accept': '*/*',
         'User-Agent': 'Mozilla/5.0'
     }
-    new_type = {
-        'name': typestring
-    }
-    response = requests.post(url=type_url, headers=headers, json=new_type)
 
-    type = json.loads(response.text)
-    if response.ok:
-        type_id = type['id']
-        logging.info("Property Type added successfully "+str(type_id))
 
-        return type_id
-    else:
-        type_id = type['data']['term_id']
-        logging.info("Property type already existed: " + str(type_id))
-        return type_id
+    types = []
+#1, 2 & 3 bedroom apartments and 3, 4 & 5 bedroom houses
+    andsplit = typestring.split("and")
+    print(andsplit)
+    for andstring in andsplit:
+        parent = str(andstring).strip().split(" ")[-1]
+        numbers = re.findall(r'\d+', andstring)
+        new_type = {
+        'name': str(parent)
+        }
+        # request to create parent
+        response = requests.post(url=type_url, headers=headers, json=new_type)
+        type = json.loads(response.text)
+        print(parent)
+        if response.ok:
+            type_id = type['id']
+            logging.info("Property Type added successfully "+str(type_id))
+            types.append(int(type_id))
+        else:
+            type_id = type['data']['term_id']
+            logging.info("Property type already existed: " + str(type_id))
+            types.append(int(type_id))         
+        # request to create child
+        for number in numbers:
+            new_type = {
+            'name': f'{number} bedrooms',
+            'parent': type_id
+            }
+            response = requests.post(url=type_url, headers=headers, json=new_type)
+            type = json.loads(response.text)
+            if response.ok:
+                child_type_id = type['id']
+                logging.info("Property Type added successfully "+str(child_type_id))
+                types.append(int(child_type_id))
+            else:
+                child_type_id = type['data']['term_id']
+                logging.info("Property type already existed: " + str(child_type_id))
+                types.append(int(child_type_id))
+    
+    print(types)
+    return types
 
 
 # def Media(jwt_token, imageurl):
@@ -215,7 +247,7 @@ def main():
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
 
-    for row in ws.iter_rows(min_row=1907, max_row=2572, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=469, max_row=469, min_col=1, values_only=True):
         title = row[1]
 
         city_name = row[2].split(',')[0]
@@ -223,12 +255,12 @@ def main():
         typestring = row[3]
 
         # arr_images = row[6].replace("]", "").replace(
-        #     "[", "").replace("'", "").split(",")
+        #     "[", "").replace("'", "").split(",")[0]
 
         city = City(jwt_token, city_name)
+        
         type = Type(jwt_token, typestring)
-        # for image in arr_images:
-        #     media = Media(jwt_token, image)
+        
         create_post(jwt_token, post_url, title, city, type)
 
 
