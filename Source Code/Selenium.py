@@ -78,17 +78,32 @@ def update_price(driver, primary_price, secondary_price):
     time.sleep(1)
     update_button = driver.find_element(By.ID, "publish")
     update_button.click()
-    time.sleep(1)
+    time.sleep(5)
     print("Price Updated")
 
-def Developer(driver, dev_names):
-    wait = WebDriverWait(driver, 10)
-    contact_button = wait.until(EC.element_to_be_clickable((By.CLASS_NAME, 'dashicons-businessman dashicons')))
+def developer(driver, dev_names):
+    print(dev_names)
+    wait = WebDriverWait(driver, 5)
+    contact_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[6]/a')))
     time.sleep(2)
-    radio_button= wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[1]/div/div/div[2]/ul/li[3]/label/input'))).click()
-    input= wait.until(EC.element_to_be_selected((By.XPATH, '/html/body/span/span/span[1]/input'))).click()
-                                        
-    input.send_keys(dev_names)
+    contact_button.click()
+    time.sleep(2)
+    radio_button= wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[1]/div/div/div[2]/ul/li[3]/label/input')))
+    radio_button.click()
+    time.sleep(2)
+    input= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[3]/div/div/div[2]/span/span[1]/span/span[1]/span')))
+    input.click()
+    time.sleep(2)   
+    serach_field= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/span/span/span[1]/input')))
+    serach_field.click()
+    time.sleep(2)                                     
+    serach_field.send_keys(dev_names)
+    slelect_result= driver.find_element(By.XPATH, '//*[@id="select2-fave_property_agency-results"]')
+    time.sleep(2)
+    slelect_result.click() 
+    update_button = driver.find_element(By.ID, "publish")
+    update_button.click()
+    time.sleep(5)
 
 
 def main():
@@ -107,7 +122,7 @@ def main():
     # Upload media
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
-    for row in ws.iter_rows(min_row=3, max_row=4, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=4, max_row=4, min_col=1, values_only=True):
         media = row[5].replace("]", "").replace("[", "").replace("'", "").replace("/","\\").split(",")   #update Media
         # for i in range(3):
         # post_id = 24732 + i*2
@@ -115,15 +130,16 @@ def main():
         # print(url)
         driver.get(property_update_url)
         # print(f"Opened post {post_id}")
-        # dev_names= row[1].split("by")[1]                                                                  #Update Developer
+        
         # print(dev_names)
         # upload_media(driver, media)
         price = row[4]                                                                                   #update Media
         primary_price = int(re.search("£([\d,]+)", price).group(1).replace(",", ""))
         secondary_price_match = re.search("- £([\d,]+)", price)
         secondary_price = int(secondary_price_match.group(1).replace(",", "")) if secondary_price_match else ('')
-        update_price(driver, primary_price, secondary_price)
-
+        # update_price(driver, primary_price, secondary_price)
+        dev_names= row[1].split("by")[1]                                                                  #Update Developer
+        developer(driver, dev_names)
     driver.quit()
 
 if __name__ == "__main__":
