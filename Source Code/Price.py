@@ -35,7 +35,7 @@ for row in ws.iter_rows(min_row=4, max_row=4, min_col=1, values_only=True):
     secondary_price = int(secondary_price_match.group(1).replace(",", "")) if secondary_price_match else ('')
     
 
-    
+    information =driver.find_element(By.CSS_SELECTOR, '#houzez-property-meta-box > div.inside > div > div > ul > li.rwmb-tab-property_details.rwmb-tab-active > a').click()
     enter_price = driver.find_element(By.ID, 'fave_property_price')
     enter_price.clear()
     enter_price.send_keys(str(primary_price))
