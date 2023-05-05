@@ -122,7 +122,7 @@ def Type(jwt_token, typestring):
     types = []
 #1, 2 & 3 bedroom apartments and 3, 4 & 5 bedroom houses
     andsplit = typestring.split("and")
-    print(andsplit)
+    # print(andsplit)
     for andstring in andsplit:
         parent = str(andstring).strip().split(" ")[-1]
         numbers = re.findall(r'\d+', andstring)
@@ -132,7 +132,7 @@ def Type(jwt_token, typestring):
         # request to create parent
         response = requests.post(url=type_url, headers=headers, json=new_type)
         type = json.loads(response.text)
-        print(parent)
+        # print(parent)
         if response.ok:
             type_id = type['id']
             logging.info("Property Type added successfully "+str(type_id))
@@ -162,71 +162,67 @@ def Type(jwt_token, typestring):
     return types
 
 
-def Media(jwt_token, arr_images):
-    print(arr_images)
+def Media(jwt_token, rename):
+    print(rename)
 
-    if not arr_images:
+    if not rename:
         logging.info("Image URL is empty, skipping...")
         return None
 
     media_url = "https://newbuildhomes.org/wp-json/wp/v2/media"
 
-    if os.path.isfile(arr_images):
-        with open(arr_images, "rb") as f:
+    if os.path.isfile(rename):
+        with open(rename, "rb") as f:
             raw = f.read()
-            file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpeg")
-            filename = file.name
-            with file as img:
-                img.write(raw)
+            # file = tempfile.NamedTemporaryFile(delete=False, mode="wb", suffix=".jpeg")
+            # filename = file.name
+            # with file as img:
+            #     img.write(raw)
 
-    fileName = os.path.basename(filename)
-    multipart_data = MultipartEncoder(
-        fields={
-            # a file upload field
-            'file': (fileName, open(filename, 'rb'), 'image/jpeg'),
-            # plain text fields
-            'alt_text': 'alt test',
-            'caption': 'caption test',
-            'description': 'description test',
-        }
+        fileName = os.path.basename(rename)
+        multipart_data = MultipartEncoder(
+            fields={
+                # a file upload field
+                'file': (fileName, open(rename, 'rb'), 'image/jpeg'),
+                # plain text fields
+                'alt_text': 'alt test',
+                'caption': 'caption test',
+                'description': 'description test',
+            }
     )
 
-    headers = {
-        'Authorization': f'Bearer {jwt_token}',
-        'Content-Type': multipart_data.content_type,
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Connection': 'keep-alive',
-        'Content-Disposition': 'attachment; filename="1.1.jpeg"',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
-    }
+        headers = {
+            'Authorization': f'Bearer {jwt_token}',
+            'Content-Type': multipart_data.content_type,
+            'Accept-Encoding': 'gzip, deflate, br',
+            'Connection': 'keep-alive',
+            'Content-Disposition': 'attachment; filename="1.1.jpeg"',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
+        }
 
-    response = requests.post(
-        url=media_url, headers=headers, data=multipart_data)
+        response = requests.post(
+            url=media_url, headers=headers, data=multipart_data)
 
-    # print(response.text)
+        # print(response.text)
 
-    media = json.loads(response.text)
+        media = json.loads(response.text)
 
-    # print(media)
+        # print(media)
 
-    if response.ok:
+        if response.ok:
 
-        media_id = media['id']
-        logging.info("Property images added successfully "+ str(media_id))
-        return (media_id)
-    # else:
-    #     media_id = media['data']['term_id']
-    #     logging.info("Image already existed: "+media_id)
-    #     return media_id
+            media_id = media['id']
+            logging.info("Property images added successfully "+ str(media_id))
+            return (media_id)
+        # else:
+        #     media_id = media['data']['term_id']
+        #     logging.info("Image already existed: "+media_id)
+        #     return media_id
 
 
 def create_post(jwt_token, post_url, title, city_id, area_id, type_id, media_id):
-    # if title is None:
-    #     logging.info("Title is None, skipping...")
-    #     return None
-    # logging.info("Property Title: "+title)
-
+  
     headers = {
         'Authorization': f'Bearer {jwt_token}',
         'Content-Type': 'application/json',
@@ -235,7 +231,6 @@ def create_post(jwt_token, post_url, title, city_id, area_id, type_id, media_id)
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/112.0'
     }
-    # for row in ws.iter_rows(min_row=2, max_row=2, min_col=1, values_only=True):
     post_data = {
         'title': title,
         'property_city': city_id,
@@ -251,12 +246,16 @@ def create_post(jwt_token, post_url, title, city_id, area_id, type_id, media_id)
     if response.ok:
         post_id = post['id']
         logging.info("New post Created: " + str(post_id))
-        post_url = "https://newbuildhomes.org/wp-admin/post.php?post=" + \
-            str(post_id)+"&action=edit"
-        print(post_url)
+        update_url = "https://newbuildhomes.org/wp-admin/post.php?post=" +str(post_id)+"&action=edit"
+        print(update_url)
+        
+        # ws.cell(row, column=9, value=update_url)
+        # ws.rows += 1
+        # wb.save('Property.xlsx')
+
         logging.info("Post URL: " + post_url)
         logging.info("-----------------------------------------------------------------------------------")
-        return post_id
+        return update_url
 
     else:
         logging.exception(
@@ -271,10 +270,10 @@ def main():
 
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
-    
+    starting_row=2
     for row in ws.iter_rows(min_row=2, max_row=4, min_col=1, values_only=True):
 
-        title = row[1].split("by")[0]
+        title = row[1].split("in")[0]
         if title is None:
             logging.info("Title is None, skipping...")
             return None
@@ -284,6 +283,9 @@ def main():
         area_name = row[2].split(',')[1]
         typestring = row[3]
         arr_images =  row[5].replace("]", "").replace("[", "").replace("'", "").split(",")[0]  #update Media
+        new_name = arr_images.replace(" by", '').replace(" in", '')
+        rename= new_name.replace(" ", "-")
+        print(rename)
 
         city = City(jwt_token, city_name)
          
@@ -291,16 +293,16 @@ def main():
         
         type = Type(jwt_token, typestring)
 
-        media = Media(jwt_token, arr_images)
+        media = Media(jwt_token, rename)
 
-               
-        create_post(jwt_token, post_url, title, city, area, type, media)
+        update_url= create_post(jwt_token, post_url, title, city, area, type, media)
     
         
-        # ws.cell(row=2, column=9, value=post_url)
+        ws.cell(row=starting_row, column=9, value=update_url)
+        starting_row +=1
         
 
-        # wb.save('Property.xlsx')
+        wb.save('Property.xlsx')
 
 
 

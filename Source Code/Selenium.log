@@ -1,108 +1,88 @@
 INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes4.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes5.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes6.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes7.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes8.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes9.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes10.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap at Countesswells in Aberdeen by CHAP Homes11.jpg
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25261&action=edit
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes1.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes2.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes3.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes4.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes5.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes6.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes7.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes8.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes9.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes10.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes11.jpg
 INFO:root:Media Uploaded
 INFO:root:Prices: £239,995 - £379,995
+INFO:root:Enter primary price:239995
+INFO:root:Enter secondary price:379995
 INFO:root:Price Updated
 INFO:root:Developer Names:  CHAP Homes
 INFO:root:AddressAberdeen, Aberdeenshire, AB15 8HY
 INFO:root:Address updated
 INFO:root:Post Updated !
 INFO:root:-----------------------------------------------------------------------------
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25263&action=edit
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002565E05C7C0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/54e07251f072521f9f1e3da06ccef2b4/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002565E05C730>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/54e07251f072521f9f1e3da06ccef2b4/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002565E05C640>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/54e07251f072521f9f1e3da06ccef2b4/url
 INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes4.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes5.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes6.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes7.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes8.jpg
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25263&action=edit
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes1.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes2.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes3.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes4.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes5.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes6.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes7.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes8.jpg
 INFO:root:Media Uploaded
 INFO:root:Prices: £379,995 - £529,995
+INFO:root:Login Successful
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25263&action=edit
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes1.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes2.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes3.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes4.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes5.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes6.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes7.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes8.jpg
+INFO:root:Media Uploaded
+INFO:root:Prices: £379,995 - £529,995
+INFO:root:Login Successful
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25263&action=edit
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes1.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes2.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes3.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes4.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes5.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes6.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes7.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David-Wilson-@-Countesswells-Aberdeen-David-Wilson-Homes8.jpg
+INFO:root:Media Uploaded
+INFO:root:Prices: £379,995 - £529,995
+INFO:root:Enter primary price:379995
+INFO:root:Enter secondary price:529995
 INFO:root:Price Updated
 INFO:root:Developer Names:  David Wilson Homes
 INFO:root:AddressAberdeen, Aberdeenshire, AB15 8FZ
 INFO:root:Address updated
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara4.jpg
+INFO:root:Post Updated !
+INFO:root:-----------------------------------------------------------------------------
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25265&action=edit
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D1808790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/40afa41810c36c540c0ee85eb2281f00/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D1808700>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/40afa41810c36c540c0ee85eb2281f00/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001D2D1808610>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/40afa41810c36c540c0ee85eb2281f00/url
+INFO:root:Login Successful
+INFO:root:update URL: https://newbuildhomes.org/wp-admin/post.php?post=25265&action=edit
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood-Aberdeen-Dandara1.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood-Aberdeen-Dandara2.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood-Aberdeen-Dandara3.jpg
+INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood-Aberdeen-Dandara4.jpg
 INFO:root:Media Uploaded
 INFO:root:Prices: From £249,950
-INFO:root:Price Updated
-INFO:root:Developer Names:  Dandara
-INFO:root:AddressAberdeen, Aberdeenshire, AB15 8LE
-INFO:root:Address updated
-INFO:root:Post Updated !
-INFO:root:-----------------------------------------------------------------------------
-INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes4.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes5.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes6.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes7.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes8.jpg
-INFO:root:Media Uploaded
-INFO:root:Prices: £379,995 - £529,995
-INFO:root:Price Updated
-INFO:root:Developer Names:  David Wilson Homes
-INFO:root:AddressAberdeen, Aberdeenshire, AB15 8FZ
-INFO:root:Address updated
-INFO:root:Post Updated !
-INFO:root:-----------------------------------------------------------------------------
-WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C78B7CC3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/31def49cfe2553ce284f2990f380b7d9/url
-WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C78B7CC370>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/31def49cfe2553ce284f2990f380b7d9/url
-WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C78B7CC2B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/31def49cfe2553ce284f2990f380b7d9/url
-INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes4.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes5.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes6.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes7.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes8.jpg
-INFO:root:Media Uploaded
-INFO:root:Prices: £379,995 - £529,995
-INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes4.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes5.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes6.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes7.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\David Wilson @ Countesswells in Aberdeen by David Wilson Homes8.jpg
-INFO:root:Media Uploaded
-INFO:root:Prices: £379,995 - £529,995
-INFO:root:Price Updated
-INFO:root:Developer Names:  David Wilson Homes
-INFO:root:AddressAberdeen, Aberdeenshire, AB15 8FZ
-INFO:root:Address updated
-INFO:root:Post Updated !
-INFO:root:-----------------------------------------------------------------------------
-WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000282E97A03D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/49f4129a8f688fb9858b741d5f933aa1/url
-WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000282E97A0370>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/49f4129a8f688fb9858b741d5f933aa1/url
-WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000282E97A02B0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/49f4129a8f688fb9858b741d5f933aa1/url
-INFO:root:Login Successful
-INFO:root:Image Path: C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara1.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara2.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara3.jpg
-INFO:root:Image Path:  C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Hazelwood in Aberdeen by Dandara4.jpg
-INFO:root:Media Uploaded
-INFO:root:Prices: From £249,950
+INFO:root:Enter primary price:249950
+INFO:root:Enter secondary price:
 INFO:root:Price Updated
 INFO:root:Developer Names:  Dandara
 INFO:root:AddressAberdeen, Aberdeenshire, AB15 8LE

@@ -1,4 +1,4 @@
-INFO:root:Property Title: Chap at Countesswells in Aberdeen 
+INFO:root:Property Title: Chap at Countesswells 
 INFO:root:Property City: Aberdeen
 INFO:root:City already existed: 94
 INFO:root:Property Area:  Aberdeenshire
@@ -7,11 +7,11 @@ INFO:root:Property Type: 3 & 4 bedroom houses
 INFO:root:Property type already existed: 1513
 INFO:root:Property type already existed: 1518
 INFO:root:Property type already existed: 1519
-INFO:root:Property images added successfully 24980
-INFO:root:New post Created: 24981
-INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=24981&action=edit
+INFO:root:Property images added successfully 25052
+INFO:root:New post Created: 25053
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25053&action=edit
 INFO:root:-----------------------------------------------------------------------------------
-INFO:root:Property Title: David Wilson @ Countesswells in Aberdeen 
+INFO:root:Property Title: David Wilson @ Countesswells 
 INFO:root:Property City: Aberdeen
 INFO:root:City already existed: 94
 INFO:root:Property Area:  Aberdeenshire
@@ -19,11 +19,11 @@ INFO:root:area already existed: 1510
 INFO:root:Property Type: 4 bedroom properties
 INFO:root:Property type already existed: 1520
 INFO:root:Property type already existed: 1521
-INFO:root:Property images added successfully 24982
-INFO:root:New post Created: 24983
-INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=24983&action=edit
+INFO:root:Property images added successfully 25054
+INFO:root:New post Created: 25055
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25055&action=edit
 INFO:root:-----------------------------------------------------------------------------------
-INFO:root:Property Title: Hazelwood in Aberdeen 
+INFO:root:Property Title: Hazelwood 
 INFO:root:Property City: Aberdeen
 INFO:root:City already existed: 94
 INFO:root:Property Area:  Aberdeenshire
@@ -34,7 +34,862 @@ INFO:root:Property type already existed: 1522
 INFO:root:Property type already existed: 1518
 INFO:root:Property type already existed: 1519
 INFO:root:Property type already existed: 1523
-INFO:root:Property images added successfully 24984
-INFO:root:New post Created: 24985
-INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=24985&action=edit
+INFO:root:Property images added successfully 25056
+INFO:root:New post Created: 25057
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25057&action=edit
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25058
+INFO:root:New post Created: 25059
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25059&action=edit
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25060
+INFO:root:New post Created: 25061
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25061&action=edit
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25062
+INFO:root:New post Created: 25063
+INFO:root:Post URL: https://newbuildhomes.org/wp-admin/post.php?post=25063&action=edit
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25070
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25071
+INFO:root:New post Created: 25072
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25073
+INFO:root:New post Created: 25074
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25075
+INFO:root:New post Created: 25076
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25078
+INFO:root:New post Created: 25079
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25080
+INFO:root:New post Created: 25081
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25082
+INFO:root:New post Created: 25083
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25084
+INFO:root:New post Created: 25085
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25094
+INFO:root:New post Created: 25095
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25096
+INFO:root:New post Created: 25097
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25098
+INFO:root:New post Created: 25099
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25100
+INFO:root:New post Created: 25101
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25102
+INFO:root:New post Created: 25103
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25104
+INFO:root:New post Created: 25105
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25106
+INFO:root:New post Created: 25107
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25108
+INFO:root:New post Created: 25109
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25110
+INFO:root:New post Created: 25111
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25112
+INFO:root:New post Created: 25113
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25114
+INFO:root:New post Created: 25115
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25116
+INFO:root:New post Created: 25117
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25118
+INFO:root:New post Created: 25119
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25120
+INFO:root:New post Created: 25121
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25122
+INFO:root:New post Created: 25123
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25124
+INFO:root:New post Created: 25125
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25126
+INFO:root:New post Created: 25127
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25128
+INFO:root:New post Created: 25129
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25130
+INFO:root:New post Created: 25131
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25132
+INFO:root:New post Created: 25133
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25134
+INFO:root:New post Created: 25135
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25136
+INFO:root:New post Created: 25137
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25138
+INFO:root:New post Created: 25139
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25140
+INFO:root:New post Created: 25141
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25142
+INFO:root:New post Created: 25143
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25144
+INFO:root:New post Created: 25145
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25146
+INFO:root:New post Created: 25147
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25148
+INFO:root:New post Created: 25149
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25164
+INFO:root:New post Created: 25165
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25168
+INFO:root:New post Created: 25169
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25176
+INFO:root:New post Created: 25177
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25178
+INFO:root:New post Created: 25179
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25180
+INFO:root:New post Created: 25181
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25182
+INFO:root:New post Created: 25183
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25184
+INFO:root:New post Created: 25185
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25186
+INFO:root:New post Created: 25187
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25188
+INFO:root:New post Created: 25189
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25190
+INFO:root:New post Created: 25191
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25192
+INFO:root:New post Created: 25193
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25194
+INFO:root:New post Created: 25195
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:New post Created: 25231
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:New post Created: 25232
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:New post Created: 25233
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:New post Created: 25234
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25245
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25246
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25251
+INFO:root:New post Created: 25252
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25253
+INFO:root:New post Created: 25254
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25255
+INFO:root:New post Created: 25256
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Chap at Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 3 & 4 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property images added successfully 25260
+INFO:root:New post Created: 25261
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: David Wilson @ Countesswells 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 4 bedroom properties
+INFO:root:Property type already existed: 1520
+INFO:root:Property type already existed: 1521
+INFO:root:Property images added successfully 25262
+INFO:root:New post Created: 25263
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Hazelwood 
+INFO:root:Property City: Aberdeen
+INFO:root:City already existed: 94
+INFO:root:Property Area:  Aberdeenshire
+INFO:root:area already existed: 1510
+INFO:root:Property Type: 2, 3, 4 & 5 bedroom houses
+INFO:root:Property type already existed: 1513
+INFO:root:Property type already existed: 1522
+INFO:root:Property type already existed: 1518
+INFO:root:Property type already existed: 1519
+INFO:root:Property type already existed: 1523
+INFO:root:Property images added successfully 25264
+INFO:root:New post Created: 25265
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
 INFO:root:-----------------------------------------------------------------------------------

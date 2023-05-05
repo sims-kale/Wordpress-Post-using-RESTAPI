@@ -30,7 +30,10 @@ def upload_media(driver, media):
     media_tab.click()
     time.sleep(2)
     for image in media:
-        logging.info("Image Path: " + image)
+        new_name = image.replace(" by", '').replace(" in", '')
+        rename= new_name.replace(" ", "-")
+        print(rename + " File")  #update Media
+        logging.info("Image Path: " + rename)
         wait = WebDriverWait(driver, 7)
         # backdrop = wait.until_not(EC.visibility_of_element_located((By.CSS_SELECTOR, '.media-modal-backdrop')))
         add_media_button = driver.find_elements(By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/div/div[4]/div[1]/div/div/div[2]/div/div[2]/a')[0]
@@ -43,8 +46,10 @@ def upload_media(driver, media):
         select_files_button = driver.find_elements(By.CSS_SELECTOR, '.wp-core-ui .button-group.button-hero .button, .wp-core-ui .button.button-hero')[-1]
         select_files_button.click()
         autoit.win_wait_active("Open")
-        time.sleep(3)
-        autoit.control_set_text("Open", "Edit1", image)
+        time.sleep(5)
+        autoit.control_set_text ("Open", "Edit1", rename)
+                                                    # 'C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes1.jpg'
+                        # Hazelwood-Aberdeen-Dandara1.jpg
         time.sleep(3)
         autoit.control_send("Open", "Edit1", "{ENTER}")
         time.sleep(5)
@@ -75,12 +80,12 @@ def update_price(driver, price, primary_price, secondary_price):
     enter_price.clear()
     time.sleep(2)
     enter_price.send_keys(str(primary_price))
-    logging.info("Enter primary price:", primary_price)
+    logging.info("Enter primary price:" + str(primary_price))
   
     enter_2price = driver.find_element(By.ID, 'fave_property_sec_price')
     enter_2price.clear()
     enter_2price.send_keys(str(secondary_price))
-    logging.info("Enter secondary price:", secondary_price)
+    logging.info("Enter secondary price:" +  str(secondary_price))
     time.sleep(1)
     time.sleep(5)
     logging.info("Price Updated")
@@ -90,7 +95,7 @@ def developer(driver, dev_names):
         logging.info("Developer names is None, skipping...")
         return None
     logging.info("Developer Names: " + dev_names)
-    wait = WebDriverWait(driver, 30)
+    wait = WebDriverWait(driver, 20)
     contact_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[6]/a')))
     time.sleep(15)
     contact_button.click()
@@ -165,16 +170,18 @@ def main():
     wb = openpyxl.load_workbook('Property.xlsx')                                                          # Upload media
     ws = wb['extraction results']
     for row in ws.iter_rows(min_row=4, max_row=4, min_col=1, values_only=True):
-        media = row[5].replace("]", "").replace("[", "").replace("'", "").replace("/","\\").split(",")   #update Media
-        
+        mediaCell=row[5]
+        print(mediaCell)
+        media = row[5].replace("]", "").replace("[", "").replace("/","\\").split(",")
+    
+        print(media)
        
-        property_update_url = row[7]
+        property_update_url = row[8]
         print(type(property_update_url))
         print(property_update_url)
-        logging.info("update URL: ", str(property_update_url))
+        logging.info("update URL: " +property_update_url)
         
         driver.get(property_update_url)
-        
         upload_media(driver, media)
         price = row[4]                                                                                   #update Media
         primary_price = int(re.search("£([\d,]+)", price).group(1).replace(",", ""))
