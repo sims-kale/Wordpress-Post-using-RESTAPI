@@ -120,6 +120,20 @@ def Type(jwt_token, typestring):
 
 
     types = []
+    if 'Studio' in typestring:
+        new_type = {
+            'name': 'Studio'
+        }
+        response = requests.post(url=type_url, headers=headers, json=new_type)
+        type=json.loads(response.text)
+        if response.ok:
+            type_id = type['id']
+            logging.info("Property Type added successfully "+ str(type_id))
+            types.append(int(type_id))
+        else:
+            type_id = type['data']['term_id']
+            logging.info("Property type already existed: " + str(type_id))
+            types.append(int(type_id)) 
 #1, 2 & 3 bedroom apartments and 3, 4 & 5 bedroom houses
     andsplit = typestring.split("and")
     # print(andsplit)
@@ -132,10 +146,10 @@ def Type(jwt_token, typestring):
         # request to create parent
         response = requests.post(url=type_url, headers=headers, json=new_type)
         type = json.loads(response.text)
-        # print(parent)
+        print(type)
         if response.ok:
             type_id = type['id']
-            logging.info("Property Type added successfully "+str(type_id))
+            logging.info("Property Type added successfully "+ str(type_id))
             types.append(int(type_id))
         else:
             type_id = type['data']['term_id']
@@ -144,19 +158,18 @@ def Type(jwt_token, typestring):
         # request to create child
         for number in numbers:
             new_type = {
-            'name': f'{number} bedrooms',
-            'parent': type_id
+            'name': f'{number} Bed',
             }
             response = requests.post(url=type_url, headers=headers, json=new_type)
             type = json.loads(response.text)
             if response.ok:
-                child_type_id = type['id']
-                logging.info("Property Type added successfully "+str(child_type_id))
-                types.append(int(child_type_id))
+                type_id = type['id']
+                logging.info("Property Type added successfully "+str(type_id))
+                types.append(int(type_id))
             else:
-                child_type_id = type['data']['term_id']
-                logging.info("Property type already existed: " + str(child_type_id))
-                types.append(int(child_type_id))
+                type_id = type['data']['term_id']
+                logging.info("Property type already existed: " + str(type_id))
+                types.append(int(type_id))
     
     # print(types)
     return types
@@ -270,9 +283,8 @@ def main():
 
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
-    starting_row=2
+    starting_row= 2
     for row in ws.iter_rows(min_row=2, max_row=4, min_col=1, values_only=True):
-
         title = row[1].split("in")[0]
         if title is None:
             logging.info("Title is None, skipping...")
@@ -298,7 +310,7 @@ def main():
         update_url= create_post(jwt_token, post_url, title, city, area, type, media)
     
         
-        ws.cell(row=starting_row, column=9, value=update_url)
+        ws.cell(row=starting_row, column=8, value=update_url)
         starting_row +=1
         
 

@@ -6,11 +6,11 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.action_chains import ActionChains
-import autoit
+# from selenium.webdriver.common.action_chains import ActionChains
 import time
+import autoit
 
-logging.basicConfig(filename='Source Code/Selenium.log', level=logging.INFO)
+logging.basicConfig(filename='Source Code/Selenium.log', level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
 
 def login(driver, username, password):
     driver.get("https://newbuildhomes.org/wp-login.php")
@@ -25,6 +25,9 @@ def login(driver, username, password):
     
 
 def upload_media(driver, media):
+    if media == ['']:
+        logging.info("Media is not available. Skiping..")
+        return None
     
     media_tab = driver.find_element(By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[4]/a')
     media_tab.click()
@@ -68,11 +71,11 @@ def update_price(driver, price, primary_price, secondary_price):
         logging.info("Prices are None, skipping...")
         return None
     logging.info("Prices: " + price)
-    wait = WebDriverWait(driver, 30)
+    wait = WebDriverWait(driver, 45)
     info = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[1]/a')))
     # info = driver.find_element(By.XPATH,'//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[1]/a')
     driver.execute_script("arguments[0].click();", info)
-    # wait.until(EC.invisibility_of_element_located((By.XPATH, '//a[@href="https://newbuildhomes.org/"]')))
+    # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
     time.sleep(15)
     info.click()
 
@@ -108,14 +111,17 @@ def developer(driver, dev_names):
     time.sleep(2)   
     serach_field= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/span/span/span[1]/input')))
     serach_field.click()
-    time.sleep(2)                                     
+    time.sleep(3)                                     
     serach_field.send_keys(dev_names)
     slelect_result= driver.find_element(By.XPATH, '//*[@id="select2-fave_property_agency-results"]')
-    time.sleep(2)
+    time.sleep(5)
     slelect_result.click() 
     time.sleep(5)
 
 def Map(driver, address, zipcode):
+    if address is None:
+        logging.info("Address is None, skipping...")
+        return None
     wait = WebDriverWait(driver, 15)
     map_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[2]/a')))
     time.sleep(15)
@@ -128,6 +134,7 @@ def Map(driver, address, zipcode):
     time.sleep(3)
     select_field= driver.find_element(By.XPATH,'//ul[@class="ui-menu ui-widget ui-widget-content ui-autocomplete ui-front"]')
     option= select_field.find_element(By.XPATH,'.//li')
+    time.sleep(2)
     option.click()    
     time.sleep(2)  
 # Property Setting
@@ -169,14 +176,14 @@ def main():
                                                                                                             
     wb = openpyxl.load_workbook('Property.xlsx')                                                          # Upload media
     ws = wb['extraction results']
-    for row in ws.iter_rows(min_row=4, max_row=4, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=2, max_row=4, min_col=1, values_only=True):
         mediaCell=row[5]
         print(mediaCell)
         media = row[5].replace("]", "").replace("[", "").replace("/","\\").split(",")
     
         print(media)
        
-        property_update_url = row[8]
+        property_update_url = row[7]
         print(type(property_update_url))
         print(property_update_url)
         logging.info("update URL: " +property_update_url)
@@ -200,7 +207,7 @@ def main():
         time.sleep(10)
         logging.info("Post Updated !")
         logging.info("-----------------------------------------------------------------------------")
-        driver.quit()
+    driver.quit()
 
 if __name__ == "__main__":
     main()
