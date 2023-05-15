@@ -38,3 +38,43 @@ INFO:root:Property images added successfully 25416
 INFO:root:New post Created: 25417
 INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
 INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: The Chase, Newbury Racecourse 
+INFO:root:Property City: Newbury
+INFO:root:City already existed: 234
+INFO:root:Property Area:  Berkshire
+INFO:root:area already existed: 1562
+INFO:root:Property Type: 3, 4 & 5 Bed House
+INFO:root:Property type already existed: 1548
+INFO:root:Property type already existed: 1550
+INFO:root:Property type already existed: 1551
+INFO:root:Property type already existed: 1553
+INFO:root:New post Created: 26738
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: The Chase, Newbury Racecourse 
+INFO:root:Property City: Newbury
+INFO:root:City already existed: 234
+INFO:root:Property Area:  Berkshire
+INFO:root:area already existed: 1562
+INFO:root:Property Type: 3, 4 & 5 Bed House
+INFO:root:Property type already existed: 1548
+INFO:root:Property type already existed: 1550
+INFO:root:Property type already existed: 1551
+INFO:root:Property type already existed: 1553
+INFO:root:New post Created: 26742
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------
+INFO:root:Property Title: Urban Quarter 
+INFO:root:Property City: Hengrove
+INFO:root:City already existed: 253
+INFO:root:Property Area:  Bristol
+INFO:root:area already existed: 1565
+INFO:root:Property Type: 1, 2 & 3 Bed House
+INFO:root:Property type already existed: 1548
+INFO:root:Property type already existed: 1555
+INFO:root:Property type already existed: 1552
+INFO:root:Property type already existed: 1550
+INFO:root:Property images added successfully 27121
+INFO:root:New post Created: 27122
+INFO:root:Post URL: https://newbuildhomes.org/wp-json/wp/v2/properties
+INFO:root:-----------------------------------------------------------------------------------

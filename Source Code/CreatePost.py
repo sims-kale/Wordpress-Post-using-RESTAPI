@@ -21,11 +21,12 @@ def get_jwt_token(username, password):
         'password': password
     }
     headers = {
-        'Accept-Encoding': 'gzip, deflate, br',
-        'Accept': '*/*',
+        # 'Accept-Encoding': 'gzip, deflate, br',
+        # 'Accept': '*/*',
         'User-Agent': 'Mozilla/5.0'
     }
     response = requests.post(url=url, headers=headers, params=params)
+    # print('jwt response', response.text, response.status_code)
     if response.ok:
         response_data = json.loads(response.text)
         return response_data['token']
@@ -277,15 +278,16 @@ def create_post(jwt_token, post_url, title, city_id, area_id, type_id, media_id)
 
 def main():
     username = 'Muktesh'
-    password = 'pNku V9CJ WvSQ 5jwZ Ip1S gPbV'
+    # password = 'pNku V9CJ WvSQ 5jwZ Ip1S gPbV'
+    password = '2d6cHuKWGAxU0OOpHJ4yrsem'
     jwt_token = get_jwt_token(username, password)
     post_url = 'https://newbuildhomes.org/wp-json/wp/v2/properties'
 
     wb = openpyxl.load_workbook('Property.xlsx')
     ws = wb['extraction results']
-    starting_row= 2
-    for row in ws.iter_rows(min_row=2, max_row=4, min_col=1, values_only=True):
-        title = row[1].split("in")[0]
+    starting_row=501
+    for row in ws.iter_rows(min_row=501, max_row=1000, min_col=1, values_only=True):
+        title = row[1].split(" in ")[0]
         if title is None:
             logging.info("Title is None, skipping...")
             return None
@@ -294,10 +296,15 @@ def main():
         city_name = row[2].split(',')[0]
         area_name = row[2].split(',')[1]
         typestring = row[3]
-        arr_images =  row[5].replace("]", "").replace("[", "").replace("'", "").split(",")[0]  #update Media
-        new_name = arr_images.replace(" by", '').replace(" in", '')
-        rename= new_name.replace(" ", "-")
-        print(rename)
+        image= row[5]
+        if image== None:
+            continue
+        else:
+            arr_images =  row[5].replace("]", "").replace("[", "").replace("'",'').split(",")[0] 
+            print(arr_images) #update Media
+            new_name = arr_images.replace(" by", '').replace(" in", '')
+            rename= new_name.replace(" ", "-")
+            print('rename-',rename)
 
         city = City(jwt_token, city_name)
          

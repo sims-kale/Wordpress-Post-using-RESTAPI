@@ -4,8 +4,8 @@ import re
 
 logging.basicConfig(filename='Source Code/rename.log', level=logging.INFO)
 
-folder_path ="D:/Downloads/propertyImages"
-new_folder_path = "D:/Downloads/New Folder"
+folder_path ="D:/Downloads/New folder (2)"
+new_folder_path = "D:/Downloads/cilentfiles2"
 if not os.path.exists(new_folder_path):
     os.mkdir(new_folder_path)
 
@@ -18,7 +18,7 @@ for filename in os.listdir(folder_path):
         # Split the filename into its name and extension
         name, extension = os.path.splitext(filename)
 
-        new_name = name.replace(" by", '').replace(" in", '')
+        new_name = name.replace(" by", '').replace(" in", '').replace("'",'')
         rename= new_name.replace(" ", "-")+extension
         print(rename)
         logging.info("Rename File: "+ rename)
