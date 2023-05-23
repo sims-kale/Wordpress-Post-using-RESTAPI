@@ -17,7 +17,6 @@ def login(driver, username, password):
     username_elem = driver.find_element(By.ID, "user_login")
     password_elem = driver.find_element(By.ID, "user_pass")
     login_button = driver.find_element(By.ID, "wp-submit")
-    time.sleep(2)
     username_elem.send_keys(username)
     password_elem.send_keys(password)
     login_button.click()
@@ -31,8 +30,8 @@ def upload_media(driver, media):
         return None
     
     media_tab = driver.find_element(By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[4]/a')
-    media_tab.click()
     time.sleep(2)
+    media_tab.click()
     print('length of media', len(media), '\n')
     for image in media:
         new_name = image.replace(" by", '').replace(" in", '').strip()
@@ -55,7 +54,6 @@ def upload_media(driver, media):
         autoit.control_set_text ("Open", "Edit1", rename)
                                                     # 'C:\Users\Administrator\Desktop\URLS_sCRAPPING\Images\Chap-at-Countesswells-Aberdeen-CHAP-Homes1.jpg'
                         # Hazelwood-Aberdeen-Dandara1.jpg
-        time.sleep(3)
         autoit.control_send("Open", "Edit1", "{ENTER}")
         time.sleep(5)
         select_button = driver.find_elements(By.XPATH, '//button[@class="button media-button button-primary button-large media-button-select"]')[-1]
@@ -63,10 +61,10 @@ def upload_media(driver, media):
             time.sleep(3)
             select_button.click()
         else:
-            time.sleep(60)
+            time.sleep(30)
             select_button.click()
     logging.info("Media Uploaded")
-    time.sleep(20)
+    time.sleep(10)
 
 def update_price(driver, price, primary_price, secondary_price):
     if price is None:
@@ -77,12 +75,12 @@ def update_price(driver, price, primary_price, secondary_price):
     info = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[1]/a')))
     driver.execute_script("arguments[0].scrollIntoView();", info)
     # driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
-    time.sleep(20)
-    info.click()
     time.sleep(10)
+    info.click()
+    time.sleep(3)
     enter_price = driver.find_element(By.ID, 'fave_property_price')
     enter_price.clear()
-    time.sleep(2)
+
     enter_price.send_keys(str(primary_price))
     logging.info("Enter primary price:" + str(primary_price))
   
@@ -90,7 +88,6 @@ def update_price(driver, price, primary_price, secondary_price):
     enter_2price.clear()
     enter_2price.send_keys(str(secondary_price))
     logging.info("Enter secondary price:" +  str(secondary_price))
-    time.sleep(1)
     time.sleep(5)
     logging.info("Price Updated")
 
@@ -102,16 +99,21 @@ def developer(driver, dev_names):
     wait = WebDriverWait(driver, 60)
     info = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="houzez-property-meta-box"]/div[2]/div/div/ul/li[1]/a')))
     driver.execute_script("arguments[0].scrollIntoView();", info)
-    wait = WebDriverWait(driver, 30)
+    wait = WebDriverWait(driver, 20)
     contact_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[6]/a')))
-    driver.execute_script("arguments[0].click();",contact_button)
-    time.sleep(20)
+    # contact_button = wait.until(EC.element_to_be_clickable((By.XPATH,  '/html/body/div[1]/div[2]/div[3]/div[1]/div[4]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[6]/a')))          
+    driver.execute_script("arguments[0].click();",contact_button)       
+    time.sleep(10)
     contact_button.click()
     time.sleep(2)
     radio_button= wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[1]/div/div/div[2]/ul/li[3]/label/input')))
+    # radio_button= wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/div[2]/div[3]/div[1]/div[4]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[1]/div/div/div[2]/ul/li[3]/label/input')))
+                                                                            
     radio_button.click()
     time.sleep(2)
     input= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[3]/div/div/div[2]/span/span[1]/span/span[1]/span')))
+    # input= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[4]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/div/div[6]/div[3]/div/div/div[2]/span/span[1]/span/span[1]/span')))
+                                                                                                                       
     input.click()
     time.sleep(2)   
     serach_field= wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/span/span/span[1]/input')))
@@ -119,14 +121,14 @@ def developer(driver, dev_names):
     time.sleep(3)                                     
     serach_field.send_keys(dev_names)
     slelect_result= driver.find_element(By.XPATH, '//*[@id="select2-fave_property_agency-results"]')
-    time.sleep(10)
+    time.sleep(5)
     slelect_result.click() 
     time.sleep(5)
 
 def Map(driver, zipcode):
         wait = WebDriverWait(driver, 15)
         map_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[2]/a')))
-        time.sleep(15)
+        time.sleep(10)
         map_button.click()
         input= driver.find_element(By.XPATH, '//*[@id="fave_property_map_address"]')
         time.sleep(2)
@@ -147,7 +149,7 @@ def Address(driver, address, zipcode):
         return None
     
     else:
-        wait = WebDriverWait(driver, 10)
+        wait = WebDriverWait(driver, 10)                                                                                                               
         adress_button = wait.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div[1]/div[2]/div[3]/div[1]/div[3]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/div/div/ul/li[3]/a')))
         adress_button.click() 
         time.sleep(2)
@@ -157,9 +159,9 @@ def Address(driver, address, zipcode):
         street.click()
         street.clear()
         street.send_keys(address)
-        time.sleep(3)
+        time.sleep(2)
         zip=driver.find_element(By.XPATH,'//*[@id="fave_property_zip"]')
-        time.sleep(3)
+        time.sleep(2)
         zip.click()
         zip.clear()
         zip.send_keys(zipcode)
@@ -182,10 +184,11 @@ def main():
     username = "Muktesh"
     password = "2d6cHuKWGAxU0OOpHJ4yrsem"
     login(driver, username, password)
+
                                                                                                             
     wb = openpyxl.load_workbook('Property.xlsx')                                                         # Upload media
     ws = wb['extraction results']
-    for row in ws.iter_rows(min_row=444, max_row=1000, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=2385, max_row=2400, min_col=1, values_only=True):
         
         mediaCell=row[5]
         media = row[5].replace("]", "").replace("[", "").replace("/","\\").split(",")[:50]
@@ -204,7 +207,10 @@ def main():
             logging.info("price is None, skipping...")
             pass                                                                 #update Media
         else:    
-         
+                                                                                  #update Media
+            # primary_price = int(re.search("£([\d,]+)", price).group(1).replace(",", ""))
+            # secondary_price_match = re.search("- £([\d,]+)", price)
+            # secondary_price = int(secondary_price_match.group(1).replace(",", "")) if secondary_price_match else ('')
             if 'From' not in price:
 
                 primary_price = price.split('-')[0].replace('£','').replace(',','').strip()
@@ -238,7 +244,7 @@ def main():
         logging.info("Address"+ address)
 
         update_button = driver.find_element(By.ID, "publish")
-        time.sleep(10)
+        time.sleep(5)
         update_button.click()
         time.sleep(10)
         logging.info("Post Updated !")
