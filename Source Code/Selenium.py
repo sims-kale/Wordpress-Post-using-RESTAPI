@@ -190,7 +190,7 @@ def main():
     ws = wb['extraction results']
     for row in ws.iter_rows(min_row=2385, max_row=2400, min_col=1, values_only=True):
         
-        mediaCell=row[5]
+        mediaCell=row[5] 
         media = row[5].replace("]", "").replace("[", "").replace("/","\\").split(",")[:50]
     
         print('media', media, '\n')

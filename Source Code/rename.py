@@ -7,7 +7,7 @@ logging.basicConfig(filename='Source Code/rename.log', level=logging.INFO)
 folder_path ="D:/Downloads/New folder (2)"
 new_folder_path = "D:/Downloads/cilentfiles2"
 if not os.path.exists(new_folder_path):
-    os.mkdir(new_folder_path)
+    os.mkdir(new_folder_path) 
 
 # Loop through each file in the folder
 for filename in os.listdir(folder_path):

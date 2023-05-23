@@ -93,7 +93,7 @@ def Area(jwt_token, area_name):
         area_id = area['id']
         logging.info("Property area added successfully " + str(area_id))
 
-        return area_id
+        return area_id 
     else:
         area_id = area['data']['term_id']
         logging.info("area already existed: " + str(area_id))

@@ -28,7 +28,7 @@ print("Login Successful")
 wb = openpyxl.load_workbook('Property.xlsx')
 ws = wb['extraction results']
 for row in ws.iter_rows(min_row=4, max_row=4, min_col=1, values_only=True):
-    price = row[4]
+    price = row[4] 
     print(price)
     primary_price = int(re.search("£([\d,]+)", price).group(1).replace(",", ""))
     secondary_price_match = re.search("- £([\d,]+)", price)
