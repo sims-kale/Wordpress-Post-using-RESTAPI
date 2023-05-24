@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import autoit
 
-logging.basicConfig(filename='Source Code/Selenium.log', level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
+logging.basicConfig(filename='/Selenium.log', level=logging.INFO, format='%(asctime)s %(levelname)s:%(message)s')
 
 def login(driver, username, password):
     driver.get("https://newbuildhomes.org/wp-login.php")
@@ -186,9 +186,9 @@ def main():
     login(driver, username, password)
 
                                                                                                             
-    wb = openpyxl.load_workbook('Property.xlsx')                                                         # Upload media
+    wb = openpyxl.load_workbook("/Agency_images/Property.xlsx")                                                         # Upload media
     ws = wb['extraction results']
-    for row in ws.iter_rows(min_row=2385, max_row=2400, min_col=1, values_only=True):
+    for row in ws.iter_rows(min_row=0, max_row=0, min_col=1, values_only=True):
         
         mediaCell=row[5] 
         media = row[5].replace("]", "").replace("[", "").replace("/","\\").split(",")[:50]

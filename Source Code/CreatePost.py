@@ -11,7 +11,7 @@ import logging
 from datetime import datetime, timedelta
 
 
-logging.basicConfig(filename='Source Code/Posts.log', level=logging.INFO)
+logging.basicConfig(filename='/Posts.log', level=logging.INFO)
 
 
 def get_jwt_token(username, password):
@@ -283,10 +283,10 @@ def main():
     jwt_token = get_jwt_token(username, password)
     post_url = 'https://newbuildhomes.org/wp-json/wp/v2/properties'
 
-    wb = openpyxl.load_workbook('Property.xlsx')
+    wb = openpyxl.load_workbook('Agency_images/Property.xlsx')
     ws = wb['extraction results']
-    starting_row=501
-    for row in ws.iter_rows(min_row=501, max_row=1000, min_col=1, values_only=True):
+    starting_row=0
+    for row in ws.iter_rows(min_row=0, max_row=0, min_col=1, values_only=True):
         title = row[1].split(" in ")[0]
         if title is None:
             logging.info("Title is None, skipping...")
